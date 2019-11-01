@@ -29,7 +29,7 @@
 ## 上传自己的项目
 这时就要用到终端了
 
-windows要下载git 由于某些原因我把我下载好的存到了毒盘里
+windows要下载git 由于某些原因我把我下载好的2.23.0版本存到了毒盘里
 
 链接: https://pan.baidu.com/s/1WewDMRp0OAL0MpEKJT9n5Q 
 提取码: ert2
