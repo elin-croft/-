@@ -4,6 +4,8 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
+                "${workspaceFolder}\\C++/**",
+                "${workspaceFolder}\\C++\\include/**",
                 "D:\\Softwares\\MinGW\\lib\\gcc\\mingw32\\8.2.0\\include\\c++/**",
                 "D:\\Softwares\\MinGW\\lib\\gcc\\mingw32\\8.2.0\\include\\c++\\backward/**",
                 "D:\\Softwares\\MinGW\\lib\\gcc\\mingw32\\8.2.0\\include\\c++\\mingw32/**",
