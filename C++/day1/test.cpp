@@ -1,5 +1,6 @@
 #include<iostream>
 #include"Sales_item.hpp"
+
 int main()
 {
     int v1, v2;
