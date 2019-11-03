@@ -123,6 +123,8 @@ ps. 没想到第一次编写md文件连二级标题都不到怎么标
 
 当git远程仓库和本地仓库版本不一样时在push时会显示拒绝push
 
+![image](https://github.com/elin-croft/study-record/blob/master/image/push.png)
+
 这时可以先从远程库上pull下来然后再上传
 
 或者自己确定不会发生远程仓库丢失等问题的话可以直接在push命令后加-f强制push
