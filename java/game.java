@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class ship{
     private int [] localposition;
     int hitparts = 0;
@@ -30,15 +32,19 @@ class ship{
 class game{
     public static void main(String [] args)
     {
+        Scanner sc = new java.util.Scanner(System.in);
+        int input_test;
         ship ship1=new ship();
         int [] location = {2,3,4};
         String result;
         ship1.setship(location);
         int [] input ={3,4,2};
-        for(int i:input)
-         {
-            result = ship1.selfcheck(i);
+        for(int i =0; i<3;i+=1)
+        {
+            input_test = sc.nextInt();
+            result = ship1.selfcheck(input_test);
             System.out.println(result);
-        }   
+        }
+        sc.close();
     }
 }
