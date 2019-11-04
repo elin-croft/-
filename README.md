@@ -150,6 +150,8 @@ git branch [branch name]
 
 创建一个分支
 
-git checkout [branch name]  
+git checkout [branch name] 
+ 
 切换到该分支，可以通过加-b来直接创建并切换到新的分支
 
+在文件发生意料以外的改变时可以通过history 和 git log来查下是什么时候自己做了什么不恰当的事情
