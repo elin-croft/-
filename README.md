@@ -135,3 +135,21 @@ ps. 没想到第一次编写md文件连二级标题都不到怎么标
 
 ## 2019 11.4 Day4
 testing 'demo' branch
+
+今天看了java，前面大部分语法都和C++基本相差不大
+
+class的成员默认属性时public
+
+### 练习git的创建分支
+
+git branch
+
+获得目前的本地所有分支，可以通过添加参数-a来获取远程和本地的所有分支
+
+git branch [branch name]
+
+创建一个分支
+
+git checkout [branch name]  
+切换到该分支，可以通过加-b来直接创建并切换到新的分支
+
