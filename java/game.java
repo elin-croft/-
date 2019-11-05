@@ -38,7 +38,6 @@ class game{
         int [] location = {2,3,4};
         String result;
         ship1.setship(location);
-        int [] input ={3,4,2};
         for(int i =0; i<3;i+=1)
         {
             input_test = sc.nextInt();
