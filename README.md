@@ -51,7 +51,7 @@ windows要下载git 由于某些原因我把我下载好的2.23.0版本存到了
 
 然后在项目文件下执行
 
-git add .
+    git add .
 
 或者运行git add REAM.md
 
@@ -59,17 +59,17 @@ git add .
 
 然后执行
 
-git commit -m"whatever you want"自己随意更改引号里的内容
+    git commit -m"whatever you want"自己随意更改引号里的内容
 
 这样就可以把暂存区里改动的内容提交给本地版本库
 
 然后就可以执行
 
-git push
+    git push
 
 我看到好多人都在用,当然我也用过，但还没彻底理解
 
-git push -u origin master
+    git push -u origin master
 
 然后输入自己的用户名字和密码就可以push了
 
@@ -142,16 +142,35 @@ class的成员默认属性时public
 
 ### 练习git的创建分支
 
-git branch
+    git branch
 
 获得目前的本地所有分支，可以通过添加参数-a来获取远程和本地的所有分支
 
-git branch [branch name]
+    git branch [branch name]
 
 创建一个分支
 
-git checkout [branch name] 
+    git checkout [branch name] 
  
 切换到该分支，可以通过加-b来直接创建并切换到新的分支
 
 在文件发生意料以外的改变时可以通过history 和 git log来查下是什么时候自己做了什么不恰当的事情
+## 2019 11.5 Day5
+今天看了java的ArrayList感觉特别像C++的容器
+
+    ArrayList<your type> myList = new ArrayList<your type>()
+可以进行插入删减和查询
+
+另外在java中可以通过new来创建String类
+
+    String str = "hello world";
+    String str1 = new String("hello world");
+以上两句都可创建一个内容为hello world的字符串
+
+但是java中有一个常量池的概念  
+在池中没有内容的时候会创建如hello字符串，有的话会先在池中找  
+有点像linux里的内存池
+
+而第二句会在自己私有的栈中先创建一个String对象str1，然后在堆中创建一个String对象并将str1指向这个位置。
+
+总体感觉像是虚拟内存的操作
