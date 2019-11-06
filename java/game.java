@@ -66,9 +66,9 @@ class grid{
     void play()
     {
         Scanner sc = new Scanner(System.in);
+        System.out.println("please input your guess");
         String input = sc.nextLine();
         int index;
-        System.out.println("please input your guess");
         for(ship tmp:ships)
         {
             if(tmp.selfcheck(input))
