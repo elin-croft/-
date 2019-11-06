@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
 
-import javax.swing.text.Position;
 
 class ship{
     private ArrayList<String> localposition;
@@ -30,7 +29,6 @@ class ship{
         {
             _position[i] = new String(sc.nextLine());
         }
-        //sc.close();
     }
 
     String getName()
@@ -57,7 +55,6 @@ class ship{
 
 class grid{
     private ArrayList<ship> ships = new ArrayList<>();
-    //private Scanner sc = new Scanner(System.in);
     void addships(ship [] yourship)
     {
         System.out.println("setting your ships' position");
@@ -89,7 +86,7 @@ class grid{
                 break;
             }
         }
-        //sc.close();
+
     }
     boolean isEmpty()
     {
