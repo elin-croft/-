@@ -77,7 +77,7 @@ windows要下载git 由于某些原因我把我下载好的2.23.0版本存到了
 
 操作完之后就可以在github网站上对应的仓库中看到已经改变的README.md了
 
-##　上传自己以前的cs231n assignment代码
+## 上传自己以前的cs231n assignment代码
 
 从昨天开始上传自己以前做的cs231n的作业。。。
 
