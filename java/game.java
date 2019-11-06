@@ -1,48 +1,122 @@
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
 
-class ship{
-    private int [] localposition;
-    int hitparts = 0;
+import javax.swing.text.Position;
 
-    void setship(int [] position)
+class ship{
+    private ArrayList<String> localposition;
+    private String _name;
+    private String [] _position;
+    void setName(String name)
     {
-        localposition = position;
+        _name = name;
+    }
+    void setship()
+    {
+        get_Position();
+        localposition = new ArrayList<>();
+        for(int i =0; i < _position.length; i++)
+        {
+            localposition.add(_position[i]);
+        }
     }
 
-    String selfcheck(int input)
+    void get_Position()
     {
-        String result = "miss";
-        for(int cell:localposition)
+        Scanner sc = new Scanner(System.in);
+        _position = new String[3];
+        for(int i =0; i < 3; i++)
         {
-            if(cell == input)
-            {
-                hitparts += 1;
-                result = "hit";
-                break;
-            }
+            _position[i] = new String(sc.nextLine());
         }
-        if(hitparts == localposition.length)
-        {
-            result = "killed";
+        //sc.close();
+    }
+
+    String getName()
+    {
+        return _name;
+    }
+
+    boolean selfcheck(String input)
+    {
+        boolean result = false;
+        int index = localposition.indexOf(input);
+        if(index >= 0){
+            localposition.remove(index);
+            result = true;
         }
         return result;
     }
+    boolean iskilled()
+    {
+        return localposition.isEmpty();
+    }
 
 };
-class game{
+
+class grid{
+    private ArrayList<ship> ships = new ArrayList<>();
+    //private Scanner sc = new Scanner(System.in);
+    void addships(ship [] yourship)
+    {
+        System.out.println("setting your ships' position");
+        for(int i =0; i < yourship.length; i++)
+        {
+            ships.add(yourship[i]);
+        }
+    }
+    void play()
+    {
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        int index;
+        System.out.println("please input your guess");
+        for(ship tmp:ships)
+        {
+            if(tmp.selfcheck(input))
+            {
+                if(tmp.iskilled())
+                {
+                    index = ships.indexOf(tmp);
+                    ships.remove(index);
+                    System.out.println(tmp.getName() + " is killed");
+                }
+                else
+                {
+                    System.out.println(tmp.getName() + " is hit");
+                }
+                break;
+            }
+        }
+        //sc.close();
+    }
+    boolean isEmpty()
+    {
+        return ships.isEmpty();
+    }
+};
+public class game{
+    
+    public static Scanner sc = new Scanner(System.in);
     public static void main(String [] args)
     {
-        Scanner sc = new java.util.Scanner(System.in);
-        int input_test;
-        ship ship1=new ship();
-        int [] location = {2,3,4};
-        String result;
-        ship1.setship(location);
-        for(int i =0; i<3;i+=1)
+        Scanner sc = new Scanner(System.in);
+        //public static final Scanner sc = new Scanner(System.in);
+        grid board = new grid();
+        ship [] ships = new ship[3];
+        System.out.println("set your ship's name and position");
+        for(int i =0;i<3;i++){
+            ships[i] = new ship();
+            System.out.println("set your ship's name");
+            ships[i].setName(sc.nextLine());
+            System.out.println("set your ship's position");
+            ships[i].setship();
+        }
+        board.addships(ships);
+        while(!board.isEmpty())
         {
-            input_test = sc.nextInt();
-            result = ship1.selfcheck(input_test);
-            System.out.println(result);
+            board.play();
         }
         sc.close();
     }
