@@ -11,14 +11,30 @@ class ship{
     {
         _name = name;
     }
-    void setship()
+    void setship(ArrayList<ship> ships)
     {
         
         _position = new String[3];
+        int flag = 0;
         localposition = new ArrayList<>();
-        for(int i =0; i < _position.length; i++)
+        for(int i = 0; i < _position.length; i++)
         {
             _position[i] = new String(sc.nextLine());
+            for(ship Ship:ships)
+            {
+                if(Ship.selfcheck(_position[i], "setting"))
+                {
+                    System.out.println("your ships is crashed, please input again");
+                    i = -1;
+                    flag = 1;
+                    break;
+                }
+            }
+            if(flag == 1){
+                localposition.clear();
+                flag = 0;
+                continue;
+            }
             while(localposition.indexOf(_position[i])>=0)
             {
                 System.out.println(_position[i] + " is exsited, please input again");
@@ -41,12 +57,13 @@ class ship{
         return _name;
     }
 
-    boolean selfcheck(String input)
+    boolean selfcheck(String input, String mode)
     {
         boolean result = false;
         int index = localposition.indexOf(input);
         if(index >= 0){
-            localposition.remove(index);
+            if(mode == "playing")
+                localposition.remove(index);
             result = true;
         }
         return result;
@@ -62,13 +79,10 @@ class grid{
     private ArrayList<ship> ships = new ArrayList<>();
     public static Scanner sc = new Scanner(System.in);
     private ship [] myships;
-    void addships()
+    void addships(ship myship)
     {
         System.out.println("setting your ships' position");
-        for(int i =0; i < myships.length; i++)
-        {
-            ships.add(myships[i]);
-        }
+        ships.add(myship);
     }
     void setship()
     {
@@ -78,7 +92,8 @@ class grid{
             System.out.println("set your ship's name");
             myships[i].setName(sc.nextLine());
             System.out.println("set "+ myships[i].getName() + "'s position");
-            myships[i].setship();
+            myships[i].setship(ships);
+            addships(myships[i]);
         }
     } 
     void play()
@@ -89,7 +104,7 @@ class grid{
         String result = "miss";
         for(ship tmp:ships)
         {
-            if(tmp.selfcheck(input))
+            if(tmp.selfcheck(input, "playing"))
             {
                 if(tmp.iskilled())
                 {
@@ -123,7 +138,6 @@ public class game{
         //public static final Scanner sc = new Scanner(System.in);
         grid board = new grid();
         board.setship();
-        board.addships();
         while(!board.isEmpty())
         {
             board.play();
