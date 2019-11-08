@@ -44,14 +44,6 @@ class ship{
         }
     }
 
-    void get_Position()
-    {
-        for(int i =0; i < 3; i++)
-        {
-            _position[i] = new String(sc.nextLine());
-        }
-    }
-
     String getName()
     {
         return _name;
