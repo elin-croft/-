@@ -102,13 +102,11 @@ class grid{
                 {
                     index = ships.indexOf(tmp);
                     ships.remove(index);
-                    result = "killed";
-                    System.out.println(tmp.getName() + " is " + result);
+                    result = tmp.getName() + " is " +"killed";
                 }
                 else
                 {
-                    result = "hit";
-                    System.out.println(tmp.getName() + " is " + result);
+                    result = tmp.getName() + " is " + "hit";
                 }
                 break;
             }
@@ -126,7 +124,7 @@ public class game{
     public static Scanner sc = new Scanner(System.in);
     public static void main(String [] args)
     {
-        Scanner sc = new Scanner(System.in);
+        
         //public static final Scanner sc = new Scanner(System.in);
         grid board = new grid();
         board.setship();
