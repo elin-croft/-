@@ -140,7 +140,7 @@ testing 'demo' branch
 
 class的成员默认属性时public
 
-### 练习git的创建分支
+练习了git的创建分支
 
     git branch
 
@@ -191,4 +191,9 @@ java中在new了一个新的对象后是自动创建了两个对象，但是创�
 今天倒是没有学什么硬核的知识，只是完善了Headfirst里的sinkship程序。
 
 看了些C++，大部分均为叙述和判断题，感觉没什么可写的
+
+## 2019 11.9 Day8
+
+学习了gcc的反汇编和gdb的基本用法
+更新了对于C/C++中引用的汇编代码
 
