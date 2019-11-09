@@ -8,7 +8,15 @@ int main()
 {
     int test = 100;
     int *p1 = nullptr,*p2 = nullptr;
-    void *p3 = nullptr;
+    void *p3 = 0;
+    if(p3 == nullptr)
+    {
+        cout<<"true"<<endl;
+    }
+    if(p3 == NULL)
+    {
+        cout<<"true"<<endl;
+    }
     int *p4;
     cout<<"test number is "<<test<<endl;
     cout<<"testing if p1 equels p3 "<<(p1 == p3)<<endl;

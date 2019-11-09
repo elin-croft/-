@@ -117,3 +117,12 @@ gdb中默认的是AT&T格式，通过命令可改为intel格式
 下面这条命令查看main函数的汇编代码
 
     disas /m main
+
+void 类的指针是可以指向任何指针的，但是不能反向。而且void指针不能被方位，不能自加操作(GNU规则中可以)
+
+在若要将void指针赋给其他类型的指针可以用强制转换
+
+    void *ptr = 0;
+    void *ptr = NULL;
+    void *ptr = nullptr;
+这三个语句基本效果一样的，都是把指针初始化为空指针。
