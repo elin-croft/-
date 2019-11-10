@@ -199,4 +199,6 @@ java中在new了一个新的对象后是自动创建了两个对象，但是创�
 
 C++更新[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter2/README.md)
 
-## 2019 11.10 Day9
+## 2019 11.10 
+今儿玩了一天的shadow of tomb raider😂
+明天继续更新。。。
