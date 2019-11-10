@@ -202,4 +202,7 @@ C++更新[今日更新](https://github.com/elin-croft/study-record/blob/master/C
 ## 2019 11.10 
 今儿玩了一天的shadow of tomb raider😂  
 毕竟周日😜  
-明天继续更新。。。
+明天继续更新。。。  
+emmmmmmmmmm  
+15个小时就通关了。。。还是有几个挑战古墓和收集消耗了时间  
+游戏内容好少了。。。只玩主线熟练地大概10个小时左右就通关了
