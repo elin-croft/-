@@ -76,7 +76,7 @@ int main()
     }
     dome->show();
     dome->test();
-    cout<<"-----------------------------------"<<endl;
+    cout<<"------------------------------------------"<<endl;
     subdome->show();
     subdome->test();
     subdome->unique();
