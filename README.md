@@ -211,3 +211,5 @@ emmmmmmmmmm
 剁了一小部分的手。。。
 
 java更新[今日更新](https://github.com/elin-croft/study-record/blob/master/java/README.md)
+
+更新了C++继承与虚函数demo
