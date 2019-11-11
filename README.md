@@ -205,4 +205,9 @@ C++更新[今日更新](https://github.com/elin-croft/study-record/blob/master/C
 明天继续更新。。。  
 emmmmmmmmmm  
 15个小时就通关了。。。还是有几个挑战古墓和收集消耗了时间  
-游戏内容好少了。。。只玩主线熟练地大概10个小时左右就通关了
+游戏内容好少啊。。。只玩主线熟练地大概10个小时左右就通关了
+## 2019 11.11 Day9
+今天双11  emmmmmmmmmmmmmm  
+剁了一小部分的手。。。
+
+java更新[今日更新](https://github.com/elin-croft/study-record/blob/master/java/README.md)
