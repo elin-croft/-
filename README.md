@@ -213,3 +213,8 @@ emmmmmmmmmm
 java更新[今日更新](https://github.com/elin-croft/study-record/blob/master/java/README.md)
 
 更新了C++继承与虚函数demo
+## 2019 11.12 (补)
+今天已经11.13号了。。。
+
+昨天周二课比较多，晚上还提心吊胆的上了一晚上中特。。。实在是没心情更新了
+
