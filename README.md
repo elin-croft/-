@@ -229,6 +229,7 @@ git add是将自己完成修改的文件添加到暂存区
 git rm在什么参数都不加时是将自己的本地仓库\暂存区中的文件删除同时删除工作目录中的文件
 
 当你的工作目录中你要rm的文件未被是删除时使用此命令就会提示你该文件在暂存区(index)中发生了变化，并同时提醒你使用cached来保留文件或者f强行删。如下图  
+
 ![image](https://github.com/elin-croft/study-record/blob/master/image/rmdemo.png)
 
 在删除该文件后使用git rm 命令无错误提示。
