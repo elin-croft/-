@@ -55,7 +55,7 @@ windows要下载git 由于某些原因我把我下载好的2.23.0版本存到了
 
 或者运行git add REAM.md
 
-第一个是添加所有当前路径下被修改的文件到暂存区，第二个是制定文件添加到暂存区
+第一个是添加所有当前路径下被修改的文件到暂存区，第二个是将指定文件添加到暂存区
 
 然后执行
 
@@ -218,3 +218,17 @@ java更新[今日更新](https://github.com/elin-croft/study-record/blob/master/
 
 昨天周二课比较多，晚上还提心吊胆的上了一晚上中特。。。实在是没心情更新了
 
+## 2019 11.13
+git add and git rm
+
+今天更新下我对git add和git rm这两个命令的理解
+
+    git add (filename)
+    git rm (filename)
+git add是将自己完成修改的文件添加到暂存区  
+git rm在什么参数都不加时是将自己的本地仓库\暂存区中的文件删除同时删除工作目录中的文件
+
+当你的工作目录中你要rm的文件未被是删除时使用此命令就会提示你该文件在暂存区(index)中发生了变化，并同时提醒你使用cached来保留文件或者f强行删。如下图  
+![image](https://github.com/elin-croft/study-record/blob/master/image/rmdemo.png)
+
+在删除该文件后使用git rm 命令无错误提示。
