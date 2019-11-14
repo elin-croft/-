@@ -157,7 +157,6 @@ constexpr修饰的函数返回值可以被普通的int和const修饰的int接受
 **因为传值不同会得出不同的返回值，所以不能被constexpr接受**  
 这些都是我现在的理解，具体详细的内容在书的后面会讲，等着以后自己打脸(;¬_¬)
 ## 关于constexpr指针
-
     constexpr int *p = &p;
     constexpr int *const p1 = &j;
 这里的p,j都要定义为全局变量，因为在函数内的局部变量在每次运行前都会被放在随机的位置，所以p无法指向局部变量
