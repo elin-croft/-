@@ -11,10 +11,13 @@ constexpr int change(int i)
     return i + 1;
 }
 
+int p = 11;
+
 int main()
 {
     constexpr int i = 10;
     constexpr int j = change(i);
+    constexpr int *ptr = &p;
     cout<<j<<endl;
     int t;
     cin >> t;
