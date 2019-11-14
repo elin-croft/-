@@ -237,6 +237,7 @@ git rm在什么参数都不加时是将自己的本地仓库\暂存区中的文�
 今天学习了C++11里面的新规则constexpr
 
 constexpr是常量表达式，在编译中不会改变的。
-今日更新[constexpr](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter2/README.md)
 
 学习了C++新定义的类定义
+
+今日更新[constexpr](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter2/README.md)
