@@ -126,3 +126,33 @@ void 类的指针是可以指向任何指针的，但是不能反向。而且voi
     void *ptr = NULL;
     void *ptr = nullptr;
 这三个语句基本效果一样的，都是把指针初始化为空指针。
+## constexpr
+这是C++11种的新规则
+
+    constexpr int i = 10;
+在定义常量表达式的时候必须在声明的同时定义，而且这个变量必须是常量。  
+可以用constexpr来修饰函数
+
+    constexpr int change()
+    {
+        int i = 10;
+        return i + 1;
+    }
+可以用普通的int还接受返回值，也可以用constexpr修饰的int来接受返回值
+改变change函数
+
+    constexpr int change(int i)
+    {
+        //int i = 10;
+        return i + 1;
+    }
+    main中
+    constexpr int i = 10;
+    constexpr int a = change(i);
+    cin>>t;
+    int z = change(t);
+    constexpr int b = change(t);//这句是不合法的
+constexpr修饰的函数返回值可以被普通的int和const修饰的int接受
+
+**因为传值不同会得出不同的返回值，所以不能被constexpr接受**  
+这些都是我现在的理解，具体详细的内容在书的后面会讲，等着以后自己打脸(;¬_¬)
