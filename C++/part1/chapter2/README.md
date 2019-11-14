@@ -161,3 +161,5 @@ constexpr修饰的函数返回值可以被普通的int和const修饰的int接受
     constexpr int *const p1 = &j;
 这里的p,j都要定义为全局变量，因为在函数内的局部变量在每次运行前都会被放在随机的位置，所以p无法指向局部变量
 必须指向全局变量
+## 关于typedef
+
