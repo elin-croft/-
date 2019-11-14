@@ -218,7 +218,7 @@ java更新[今日更新](https://github.com/elin-croft/study-record/blob/master/
 
 昨天周二课比较多，晚上还提心吊胆的上了一晚上中特。。。实在是没心情更新了
 
-## 2019 11.13
+## 2019 11.13 Day10
 git add and git rm
 
 今天更新下我对git add和git rm这两个命令的理解
@@ -233,3 +233,8 @@ git rm在什么参数都不加时是将自己的本地仓库\暂存区中的文�
 ![image](https://github.com/elin-croft/study-record/blob/master/image/rmdemo.png)
 
 在删除该文件后使用git rm 命令无错误提示。
+## 2019 11.14 Day11
+今天学习了C++11里面的新规则constexpr
+
+constexpr是常量表达式，在编译中不会改变的。
+今日更新[constexpr](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter2/README.md)
