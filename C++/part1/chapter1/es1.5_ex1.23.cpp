@@ -5,11 +5,14 @@
 using std::cout;
 using std::cin;
 using std::endl;
+using std::string;
 
 int main()
 {
     Sales_item item;
-    std::map<std::string, int>books;
+    std::map<string, int>books;
+    std::map<string, int>::iterator it1;
+    //you can also use this iterator
     while(cin>>item)
     {
         books[item.isbn()]++;
