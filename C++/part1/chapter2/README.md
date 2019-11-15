@@ -182,5 +182,4 @@ constexpr修饰的函数返回值可以被普通的int和const修饰的int接受
     decltype((a)) c = something;
     decltype(*p) d =something;
 这里的decltype是指将b定义为a的同样类型，即vaule的同类。  
-c和a的类型一样，**但是加了括号后c为引用型，必须初始化**  
-d同样为引用型
+c和a的类型一样，**但是加了括号后c为引用型，必须初始化**,d同样为引用型
