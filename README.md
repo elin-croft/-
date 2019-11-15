@@ -241,3 +241,10 @@ constexpr是常量表达式，在编译中不会改变的。
 学习了C++新定义的类定义
 
 今日更新[constexpr](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter2/README.md)
+
+## 2019 11.15 Day12
+C++11新规则 **auto**
+
+今日更新[constexpr](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter2/README.md)
+
+学习了一丢丢的Makefile(●˘◡˘●)
