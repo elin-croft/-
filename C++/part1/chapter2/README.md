@@ -111,6 +111,11 @@ b和a基本同理，但是有一步lea操作。这个lea将esp+0x8里存的内�
 用gdb查看反汇编的时候要在编译时加上-g参数
 
     g++ -g -o
+
+在windows中可以直接生成通过
+
+    gdb {filenamme}.exe
+
 gdb中默认的是AT&T格式，通过命令可改为intel格式
 
     set disassembly-flavor intel
@@ -167,4 +172,15 @@ constexpr修饰的函数返回值可以被普通的int和const修饰的int接受
     using num = int;
     typedef int num;
 上面两个效果是一样的
+## 关于auto and decltype
 
+    auto a = vaule;
+    int *p = something;
+这里的auto一定要在定义时初始化,因为需要来确定a的类型，只是省去了人为写的过程
+
+    decltype(a) b;
+    decltype((a)) c = something;
+    decltype(*p) d =something;
+这里的decltype是指将b定义为a的同样类型，即vaule的同类。  
+c和a的类型一样，**但是加了括号后c为引用型，必须初始化**  
+d同样为引用型
