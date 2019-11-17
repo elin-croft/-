@@ -248,3 +248,8 @@ C++11新规则 **auto**
 今日更新[constexpr](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter2/README.md)
 
 学习了一丢丢的Makefile(●˘◡˘●)
+## 2019 11.16
+帮代课今日不更
+
+## 2019 11.17
+写大作业看情况
