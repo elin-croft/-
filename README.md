@@ -253,3 +253,10 @@ C++11新规则 **auto**
 
 ## 2019 11.17
 写大作业看情况
+
+最终还是没更新。。。
+
+中特大作业实在是煎熬
+
+## 2019 11.18 Day13
+java更新[今日更新](https://github.com/elin-croft/study-record/blob/master/java/README.md)
