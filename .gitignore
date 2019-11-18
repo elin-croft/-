@@ -2,3 +2,6 @@
 *.class
 *.json
 *.o
+*.so
+*.out
+*.a
