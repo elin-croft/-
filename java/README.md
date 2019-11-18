@@ -30,3 +30,19 @@ java中的类在继承时可以像C++一样给基类new一个子类
 表现出来的结果也和C++中的一致  
 不了解C++的见此解释  
 总体还说是基类，会将在子类中被重写的函数的指针指向被重写的位置，子类中独有的函数无法访问(毕竟不是自己的嘛)
+
+inheritance执行结果
+
+    don't know
+    eat meat
+    well sleep like a dog
+    -----------------------------
+    don't know
+    eat meat
+    well sleep like a dog
+    hi guys, i'm not in any superclass
+    walk like a dog
+    like a wolf
+java中特有的abstract关键字可以生命一个类为抽象类，不可被实例化，只能被继承，当一个类中的某个方法被abstract关键字修饰后整个类被默认为抽象类，必须用abstract修饰。
+
+抽象方法必须全部被实现。
