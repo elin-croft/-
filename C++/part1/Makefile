@@ -7,10 +7,13 @@ src = $(shell find ./src -name "*.cpp")
 obj = ./bin/mySales_item.o
 inc = ./include/
 
+
 $(target): $(obj)
-		$(cc) $(gdb) -I$(inc) $(code) -o $(target) $<
-		
+	@echo "compilling..."
+		@$(cc) $(gdb) -I$(inc) $(code) -o $(target) $<
+	@echo "done"
+	
 %.o: $(src)
-		$(cc) -I$(inc) -c $< -o $@
+		@$(cc) -I$(inc) -c $< -o $@
 clean:
 	@rm -f $(obj)

@@ -1,4 +1,5 @@
-class test{
+
+class Test{
     private void priv_hello() 
     {
         System.out.println("priv_hello in this class is a private function you can't access by merely call p_hello function");    
@@ -16,7 +17,7 @@ class test{
 class run{
     public static void main(String [] args)
     {
-        test p = new test();
+        Test p = new Test();
         p.hello();
         p.call_priv_hello();
     }

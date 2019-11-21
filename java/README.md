@@ -46,3 +46,15 @@ inheritance执行结果
 java中特有的abstract关键字可以生命一个类为抽象类，不可被实例化，只能被继承，当一个类中的某个方法被abstract关键字修饰后整个类被默认为抽象类，必须用abstract修饰。
 
 抽象方法必须全部被实现。
+## java中的class
+java中的calss全部都继承一个Object类
+
+    class b extends Obaject()
+但这个是默认继承，不用写。
+
+java中的Object类可以单向指任意的类
+
+    Object obj = new Object();
+    Dog dog = new Dog();
+    obj = dog;
+类似C++里的void指针

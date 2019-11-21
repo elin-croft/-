@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 
 class Animals{
     int food;
@@ -59,7 +58,7 @@ class animallist{
     }
 
 }
-public class  inheritance{
+class  inheritance{
     public static void main(String [] args)
     {
         Animals Wolf = new wolf();
