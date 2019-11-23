@@ -58,3 +58,17 @@ java中的Object类可以单向指任意的类
     Dog dog = new Dog();
     obj = dog;
 类似C++里的void指针
+## java中的类多继承
+由于多继承可能会出现Deadly Diamond of Death问题,所以java中不能多继承
+
+![image](https://github.com/elin-croft/study-record/blob/master/image/DDD.png)
+
+java提出了interface关键字，类似class但是里面的所有方法都abstract修饰的，即必须在子类中实现。在继承是用implements关键字
+
+    public interface pet{
+        ...
+    }
+    
+    public dog extends canine implements pet{
+        ...
+    }

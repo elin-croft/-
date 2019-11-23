@@ -9,12 +9,15 @@ class object{
     {
         Test test = new Test();
         Animals animal = new Animals();
+        Test animal1;
         //Test test1 = new Test();
         //test container
         ArrayList<Object> mylist = new ArrayList<Object>();
         mylist.add(test);
-        mylist.getClass();
-        System.out.println("test");
+        if(mylist.get(0) instanceof Test){
+            animal1 = (Test)mylist.get(0);
+            System.out.println("done");
+        }
     }
 
 }
