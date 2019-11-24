@@ -15,7 +15,7 @@ int main()
     vector<mySalesitem> sales_item(2);
     vector<string> str = {"a","an","the"};
     vector<string> str1(5,"abc");
-    vector<int> num;
+    vector<int> num={1,2,3};
     int tmp;
     vector<int> num_test(3);
     string test = "hello world";
@@ -27,8 +27,8 @@ int main()
     {
         cout<<(*itv).bookNo<<endl;
     }
-    while(cin>>tmp)
-        num.push_back(tmp);
+    //while(cin>>tmp)
+    //    num.push_back(tmp);
     for(auto itv = num.begin();itv != num.end(); itv++)
     {
         cout<<*itv<<endl;
@@ -38,5 +38,7 @@ int main()
     {
         cout<<*itv<<endl;
     }
+    cout<<num[1]<<endl;
+    cout<<num.at(0)<<endl;
     return 0;
 }

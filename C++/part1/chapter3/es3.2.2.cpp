@@ -20,6 +20,7 @@ int main()
         cout << str1 << " is longer" << endl;
     else
         cout << str2 << " is longer" << endl;
+    cout<<str1[0]<<endl;
     for (auto &c : str1) //actually auto c equits to char c
         c = 'X';
     cout << str1 << endl;

@@ -15,4 +15,4 @@ vector就是维度不限的向量也被叫容器，可以存放规定的类型�
 要在name1中放数据的话可以用insert函数进行任意位置插入插入,或者push_back。
 
     insert(name.end(),...)可以达到相同的效果
-string的很多成员函数和vector的成员函数功能是大致一样的
+string的很多成员函数和vector的成员函数功能是大致一样的,同样可以用name[]的形式和at来访问数据
