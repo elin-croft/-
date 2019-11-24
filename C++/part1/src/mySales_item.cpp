@@ -1,6 +1,6 @@
 #include"mySales_item.hpp"
 
-string mySalesitem::isbn()const
+std::string mySalesitem::isbn()const
 {
     return bookNo;
 }

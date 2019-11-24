@@ -1,8 +1,8 @@
 home = ./
 cc = g++
 gdb = -g
-code = $(home)chapter2/es2.6.2.cpp
-target = $(home)chapter2/es2.6.2.out
+code = $(home)chapter3/es3.1.cpp
+target = $(home)chapter3/es3.1.out
 src = $(shell find ./src -name "*.cpp")
 obj = ./bin/mySales_item.o
 inc = ./include/
