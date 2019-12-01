@@ -272,3 +272,6 @@ java更新[今日更新](https://github.com/elin-croft/study-record/blob/master/
 
 ## 2019 11.30 Day16
 服务器down掉了😜于是，今天更新github
+
+## 2019 12.01 Day17
+C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter3/README.md)
