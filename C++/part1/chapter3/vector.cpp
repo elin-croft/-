@@ -15,6 +15,7 @@ int main()
     vector<mySalesitem> sales_item(2);
     vector<string> str = {"a","an","the"};
     vector<string> str1(5,"abc");
+    vector<int>::iterator it;
     vector<int> num={1,2,3};
     int tmp;
     vector<int> num_test(3);
