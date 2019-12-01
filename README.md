@@ -262,9 +262,13 @@ C++11新规则 **auto**
 java更新[今日更新](https://github.com/elin-croft/study-record/blob/master/java/README.md)
 
 ## 2019 11.21 Day14
-
 java更新[今日更新](https://github.com/elin-croft/study-record/blob/master/java/README.md)
+
 ## 2019 11.23 Day15
 java更新[今日更新](https://github.com/elin-croft/study-record/blob/master/java/README.md)
-## 2019 11.26 Day16
+
+## 2019 11.26
 最近各种大作业和课程的小作业压了下来，还有项目实在是没时间更新
+
+## 2019 11.30 Day16
+服务器down掉了😜于是，今天更新github
