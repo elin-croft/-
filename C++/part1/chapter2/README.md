@@ -175,6 +175,7 @@ constexpr修饰的函数返回值可以被普通的int和const修饰的int接受
 ## 关于auto and decltype
 
     auto a = vaule;
+    auto a(vaule);
     int *p = something;
 这里的auto一定要在定义时初始化,因为需要来确定a的类型，只是省去了人为写的过程
 

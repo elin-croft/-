@@ -11,6 +11,10 @@ using std::vector;
 int main()
 {
     vector<string> text{"hello",", ", "world"};
+    int a[] = {1,2,3};
+    int *b = a;
+    cout<<"b in mem: "<<b<<" b+1 in mem: "<<b+1<<endl;
+    cout<<"a in mem: "<<a<<" a+1 in mem: "<<a+1<<endl;
     for(auto it = text.begin();it != text.end() && *it != " "; it++)
     {
         string temp = *it;
