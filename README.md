@@ -275,3 +275,29 @@ java更新[今日更新](https://github.com/elin-croft/study-record/blob/master/
 
 ## 2019 12.01 Day17
 C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter3/README.md)
+
+## 2019 12.01 Day18
+今天更新github的一些细节
+
+### git init
+
+    git init
+在本地创建一个文件夹后在里面执行git init会自动生成一个.git文件夹  
+这样就成功生成了一个git仓库
+
+这时是可以通过checkout -b来切换分支的，但是这个分支还未生成,只能执行add和commit这些指令，其他的指令不是空就是提示各种错误  
+不切换的话默认在master
+
+    error: pathspec 'test' did not match any file(s) known to git.
+    fatal: You are on a branch yet to be born
+以上就是两个常见的错误
+
+在初始化完成后有下面命令添加远程仓库
+
+    git remote add [option] origin <url>
+这样就把分支和远程仓库就连接起来了
+
+然后就可以执行git pull把代码拉到本地仓库里
+
+**注意这里再拉下来后直接执行ls查看的话还是现实的空文件夹，需要用checkout切换到分支才能把代码同步进文件夹**
+
