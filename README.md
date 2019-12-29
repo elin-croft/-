@@ -312,7 +312,7 @@ C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B
 然后Google一圈已没有发现什么好的办法，最后随手点了一个连接看到是冒号前加了空格造成的。。。
 
 删了空格还真就推上去了😒
-## 2919 12.6 Day20
+## 2019 12.6 Day20
 今天记个仇。。。
 
 今天被**WSL**给坑了。。。
@@ -324,3 +324,8 @@ C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B
 然后我就想把文件夹直接强删了结果在，linux里rm-rf删不掉，windows里也删不掉。。。
 
 结果试了下WSL还就真的删掉了。。。
+## 2019 12.29 Day21
+总算快考完试了 
+久违的更新
+
+今天简单的看了点旧风格的接口和多维数组
