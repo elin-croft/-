@@ -301,7 +301,7 @@ C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B
 
 **注意这里再拉下来后直接执行ls查看的话还是现实的空文件夹，需要用checkout切换到分支才能把代码同步进文件夹**
 
-## 2019 12.4 Day019
+## 2019 12.4 Day19
 ### 关于git push
 今天在推项目的时候发生了一个莫名其妙的错误
 
@@ -329,3 +329,8 @@ C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B
 久违的更新
 
 今天简单的看了点旧风格的接口和多维数组
+## 2020 4.03 Day22
+C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter3/README.md)
+
+今天开始系统的复习与学习class
+
