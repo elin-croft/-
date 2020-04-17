@@ -1,21 +1,32 @@
 #include<iostream>
-#include"Sales_item.hpp"
+//#include"Sales_item.hpp"
 
 using std::cout;
 using std::cin;
 using std::endl;
 using std::string;
-
+class test{
+public:
+    int a = 10;
+    test &set()
+    {
+        cout<<"non const"<<endl;
+        return *this;
+    }
+    const test& set() const
+    {
+        cout<<"const"<<endl;
+        return *this;
+    }
+};
+const int& cte(int &a)
+{
+    return a;
+}
 int main()
 {
-    int v1, v2;
-    cout<<"hello world"<<endl;
-    cin>>v1>>v2;
-    cout<<"the sum of "<<v1
-            <<" and "<<v2<<" is "<<v1+v2<<endl;
-    cout<<"the multiplication of "<<v1
-            <<" and "<<v2<<" is "<<v1*v2<<endl;
-    cout<<"and of course the program in ex1.6 is illegal"<<'\n'<<
-                "to correct it you need to erase the ';' after v1 and v2 "<<endl;
+    int a =10;
+    const int &b = a;
+    cout<<++a<<' '<<b<<endl;
     return 0;
 }

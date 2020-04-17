@@ -330,7 +330,11 @@ C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B
 
 今天简单的看了点旧风格的接口和多维数组
 ## 2020 4.03 Day22
-C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter3/README.md)
+C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter7/README.md)
 
 今天开始系统的复习与学习class
+## 2020 4.17 Day23
+一口气完成了第七章的类，统一更新。关于constexpr还是不太理解。。。
+
+C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter7/README.md)
 

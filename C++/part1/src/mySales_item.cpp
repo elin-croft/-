@@ -1,9 +1,21 @@
 #include"mySales_item.hpp"
 
+mySalesitem::mySalesitem(const std::string &s, int unit_sold, double revenue)
+{
+    this->bookNo = s;
+    this->unit_sold = unit_sold;
+    this->revenue = revenue;
+}
+mySalesitem::mySalesitem(std::istream &is)
+{
+    read(is, *this);
+}
+inline
 std::string mySalesitem::isbn()const
 {
     return bookNo;
 }
+inline
 double mySalesitem::avg_price()const
 {
     double ans = 0.0;
