@@ -49,24 +49,25 @@ public:
 void test(void* object)
 {
     if(object == NULL)
-        throw "pointer is Null";
+        throw std::runtime_error ("pointer is Null");
 }
 
 int main()
 {
-    shape *dome=NULL;
+    shape *dome=nullptr, *dome2=nullptr;
     subshape *subdome = nullptr;
-    dome = new subshape(2, 3);
+    subdome = new subshape(2,3);
+    dome = new subshape(3,3);
+    dome2 = subdome;
     try{
         test(dome);
     }
-    catch(const char* msg)
+    catch(const std::exception &e)
     {
-        cout<<msg;
+        cout<<e.what();
         exit(1);
     }
-    dome = new subshape(2, 3);
-    subdome = new subshape(2,3);
+    //dome = new subshape(2, 3);
     try{
         dome->areas();
     }
@@ -76,10 +77,15 @@ int main()
     }
     dome->show();
     dome->test();
+    //dome->unique()
     cout<<"------------------------------------------"<<endl;
     subdome->show();
     subdome->test();
     subdome->unique();
+    cout<<"------------------------------------------"<<endl;
+    dome2->show();
+    dome2->test();
+    //dome2->unique();
     system("pause");
     delete dome;
     delete subdome;
