@@ -338,3 +338,6 @@ C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B
 
 C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter7/README.md)
 
+C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter8/README.md)
+## 2020 4.17 Day24
+C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter8/README.md)
