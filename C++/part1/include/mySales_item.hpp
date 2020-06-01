@@ -1,8 +1,6 @@
 #ifndef _MY_SALES_ITEM_HPP
 #define _MY_SALES_ITEM_HPP
 #include<iostream>
-//do not use using in header
-//using std::string;
 class mySalesitem{
 public:
     mySalesitem() = default;

@@ -2,7 +2,7 @@
 #include<fstream>
 #include<vector>
 #include<string>
-#include<mySales_item.hpp>
+//#include<mySales_item.hpp>
 
 using std::cin;
 using std::cout;
@@ -31,10 +31,13 @@ int main(int argc, char *argv[])
     cout<<in.eof()<<endl;
     cout<<in.bad()<<endl;
     in.seekg(std::ios::beg);
+    cout<<in.tellg()<<endl;
     cout<<"--------------------------"<<endl;
     cout<<in.fail()<<endl;
     cout<<in.eof()<<endl;
     cout<<in.bad()<<endl;
+    in.seekg(0,std::ios::end);
+    cout<<in.tellg()/1024.0<<"kB"<<endl;
     while(!in.eof())
     {
         std::getline(in, tmp);

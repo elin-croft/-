@@ -44,7 +44,8 @@ int main(int argc, char* argv[])
             ins>>numbers;
             if(ins.fail())
                 break;
-            tmpp.phones.push_back(numbers);
+            else
+                tmpp.phones.push_back(numbers);
         }
         infos.push_back(tmpp);
     }

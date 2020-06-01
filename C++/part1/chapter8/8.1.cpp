@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
     {
         read(cin);
     }
-    catch(const std::exception& e)
+    catch(const std::runtime_error& e)
     {
         std::cerr << e.what() << '\n';
     }
