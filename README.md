@@ -341,3 +341,8 @@ C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B
 C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter8/README.md)
 ## 2020 4.17 Day24
 C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter8/README.md)
+## 2020 6.1 Day25
+今儿是儿童节~  
+
+    git remote rm [repo] // remove a repo
+    git remote add -t origin [repo] // add a branch as origin
