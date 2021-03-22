@@ -45,10 +45,11 @@ int main()
         cout<<msg;
         exit(1);
     }
+    cout<<"input your choose"<<endl;
     while(cin>>input)
         play->guess(input);
     delete play;
-    system("pause");
+    //system("pause");
 
     return 0;
 }
