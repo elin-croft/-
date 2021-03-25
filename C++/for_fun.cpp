@@ -11,7 +11,7 @@ void test(void *pointer)
     if(pointer == NULL)
         throw "pointer is Null";  
 }
-class game{
+class Game{
 private:
     string translate(int x);
     char detranslate(string x);
@@ -19,11 +19,11 @@ private:
     string condition;
     int win=0, g_tie=0,lost=0;
 public:
-    game()
+    Game()
     {
         condition = "<**>";
     }
-    ~game()
+    ~Game()
     {
         cout<<"you win "<<win<<" times"<<'\n'
             <<"you tie "<<g_tie<<" times"<<'\n'
@@ -34,9 +34,9 @@ public:
 int main()
 {
     srand(time(NULL));
-    game *play;
+    Game *play;
     string input;
-    play = new game;
+    play = new Game;
     try{
         test(play);
     }
@@ -53,7 +53,7 @@ int main()
 
     return 0;
 }
-string game::translate(int x)
+string Game::translate(int x)
 {
     string ans;
     if (x == 0)
@@ -64,7 +64,7 @@ string game::translate(int x)
         ans = "paper";
     return ans;
 }
-char game::detranslate(string x)
+char Game::detranslate(string x)
 {
     char ans;
     if (x == "rock")
@@ -75,7 +75,7 @@ char game::detranslate(string x)
         ans = '2';
     return ans;   
 }
-void game::guess(string input)
+void Game::guess(string input)
 {
     int c = rand() % 3;
     string record;
