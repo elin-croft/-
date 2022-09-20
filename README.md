@@ -346,3 +346,9 @@ C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B
 
     git remote rm [repo] // remove a repo
     git remote add -t origin [repo] // add a branch as origin
+
+## 2022 9.21 Day...
+
+没想到上次更新已经是两年前了。。。  
+目前已经入职工作快3个月了。。。  
+开个新坑吧，go
