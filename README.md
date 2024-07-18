@@ -352,3 +352,37 @@ C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B
 没想到上次更新已经是两年前了。。。  
 目前已经入职工作快3个月了。。。  
 开个新坑吧，go
+
+## 2024 07.18 Day...
+更新一下工作中常用的 git 命令吧  
+  
+常用的远程仓库设置
+```shell
+// pull code from repo named as origin
+git pull origin
+
+// add a remote repo and reset origin repo address
+git remote add upstream [github repo address]
+git remote set-url origin [github repo address]
+```
+  
+提交代码常用的
+```shell
+git checkout -b branch
+git add -u // add modified files only
+git commit -m"message"
+
+// squash commit from HEAD to the commit after commitID into one commit 
+git rebase -i commitID 
+
+git push origin branch
+```
+  
+查看日志和变更
+```shell
+git diff // diff between unstaged and HEAD
+git diff HEAD // diff between HEAD no matter staged or unstaged
+git log // check log
+git log -p filename // check filename modified history
+git show -p stash@{n} // check stashed content in stash@{n}
+```
