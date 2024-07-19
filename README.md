@@ -355,7 +355,23 @@ C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B
 
 ## 2024 07.18 Day...
 更新一下工作中常用的 git 命令吧  
-  
+
+常用命令简写
+```
+[alias]
+     co = checkout
+     ci = commit
+     st = status
+     pl = pull
+     ps = push
+     dt = difftool
+     l = log --stat
+     lg = log --graph --pretty=oneline
+     cp = cherry-pick
+     ca = commit -a
+     b = branch
+     rt = reset
+```
 常用的远程仓库设置
 ```shell
 // pull code from repo named as origin
