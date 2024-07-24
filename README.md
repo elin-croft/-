@@ -402,3 +402,7 @@ git log // check log
 git log -p filename // check filename modified history
 git show -p stash@{n} // check stashed content in stash@{n}
 ```
+
+## 2024.07.24
+电脑洒水，歇菜了。。。  
+难受，有好多命令都是记到了本地markdown文件里，搞不好要全丢了
