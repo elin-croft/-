@@ -123,7 +123,7 @@ ps. 没想到第一次编写md文件连二级标题都不到怎么标
 
 当git远程仓库和本地仓库版本不一样时在push时会显示拒绝push
 
-![image](https://github.com/elin-croft/study-record/blob/master/image/push.png)
+![image](image/push.png)
 >这个图就是我在网页上修改了README.md文件然后在本地没有先pull就直接push时的结果
 
 这时可以先从远程库上pull下来然后再上传
@@ -197,7 +197,7 @@ java中在new了一个新的对象后是自动创建了两个对象，但是创�
 学习了gcc的反汇编和gdb的基本用法
 更新了对于C/C++中引用的汇编代码
 
-C++更新[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter2/README.md)
+C++更新[今日更新](part1/chapter2/README.md)
 
 ## 2019 11.10 
 今儿玩了一天的shadow of tomb raider😂  
@@ -210,7 +210,7 @@ emmmmmmmmmm
 今天双11  emmmmmmmmmmmmmm  
 剁了一小部分的手。。。
 
-java更新[今日更新](https://github.com/elin-croft/study-record/blob/master/java/README.md)
+java更新[今日更新](java/README.md)
 
 更新了C++继承与虚函数demo
 ## 2019 11.12 (补)
@@ -230,7 +230,7 @@ git rm在什么参数都不加时是将自己的本地仓库\暂存区中的文�
 
 当你的工作目录中你要rm的文件未被是删除时使用此命令就会提示你该文件在暂存区(index)中发生了变化，并同时提醒你使用cached来保留文件或者f强行删。如下图  
 
-![image](https://github.com/elin-croft/study-record/blob/master/image/rmdemo.png)
+![image](image/rmdemo.png)
 
 在删除该文件后使用git rm 命令无错误提示。
 ## 2019 11.14 Day11
@@ -240,12 +240,12 @@ constexpr是常量表达式，在编译中不会改变的。
 
 学习了C++新定义的类定义
 
-今日更新[constexpr](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter2/README.md)
+今日更新[constexpr](part1/chapter2/README.md)
 
 ## 2019 11.15 Day12
 C++11新规则 **auto**
 
-今日更新[constexpr](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter2/README.md)
+今日更新[constexpr](part1/chapter2/README.md)
 
 学习了一丢丢的Makefile(●˘◡˘●)
 ## 2019 11.16
@@ -259,13 +259,13 @@ C++11新规则 **auto**
 中特大作业实在是煎熬
 
 ## 2019 11.18 Day13
-java更新[今日更新](https://github.com/elin-croft/study-record/blob/master/java/README.md)
+java更新[今日更新](java/README.md)
 
 ## 2019 11.21 Day14
-java更新[今日更新](https://github.com/elin-croft/study-record/blob/master/java/README.md)
+java更新[今日更新](java/README.md)
 
 ## 2019 11.23 Day15
-java更新[今日更新](https://github.com/elin-croft/study-record/blob/master/java/README.md)
+java更新[今日更新](java/README.md)
 
 ## 2019 11.26
 最近各种大作业和课程的小作业压了下来，还有项目实在是没时间更新
@@ -274,7 +274,7 @@ java更新[今日更新](https://github.com/elin-croft/study-record/blob/master/
 服务器down掉了😜于是，今天更新github
 
 ## 2019 12.01 Day17
-C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter3/README.md)
+C++[今日更新](part1/chapter3/README.md)
 
 ## 2019 12.01 Day18
 今天更新github的一些细节
@@ -330,17 +330,17 @@ C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B
 
 今天简单的看了点旧风格的接口和多维数组
 ## 2020 4.03 Day22
-C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter7/README.md)
+C++[今日更新](part1/chapter7/README.md)
 
 今天开始系统的复习与学习class
 ## 2020 4.17 Day23
 一口气完成了第七章的类，统一更新。关于constexpr还是不太理解。。。
 
-C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter7/README.md)
+C++[今日更新](part1/chapter7/README.md)
 
-C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter8/README.md)
+C++[今日更新](part1/chapter8/README.md)
 ## 2020 4.17 Day24
-C++[今日更新](https://github.com/elin-croft/study-record/blob/master/C%2B%2B/part1/chapter8/README.md)
+C++[今日更新](part1/chapter8/README.md)
 ## 2020 6.1 Day25
 今儿是儿童节~  
 
