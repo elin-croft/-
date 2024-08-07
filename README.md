@@ -40,8 +40,10 @@ windows要下载git 由于某些原因我把我下载好的2.23.0版本存到了
 
 输入
 
-    git config --global user.name "your name"
-    git config --global user.email "your email"
+```shell
+git config --global user.name "your name"
+git config --global user.email "your email"
+```
 
 用自己的用户名字和邮箱替换引号里的内容
 
@@ -51,7 +53,9 @@ windows要下载git 由于某些原因我把我下载好的2.23.0版本存到了
 
 然后在项目文件下执行
 
-    git add .
+```shell
+git add .
+```
 
 或者运行git add REAM.md
 
@@ -59,17 +63,23 @@ windows要下载git 由于某些原因我把我下载好的2.23.0版本存到了
 
 然后执行
 
-    git commit -m"whatever you want"自己随意更改引号里的内容
+```shell
+git commit -m"whatever you want"自己随意更改引号里的内容
+```
 
 这样就可以把暂存区里改动的内容提交给本地版本库
 
 然后就可以执行
 
-    git push
+```shell
+git push
+```
 
 我看到好多人都在用,当然我也用过，但还没彻底理解
 
-    git push -u origin master
+```shell
+git push -u origin master
+```
 
 然后输入自己的用户名字和密码就可以push了
 
@@ -142,11 +152,15 @@ class的成员默认属性时public
 
 练习了git的创建分支
 
-    git branch
+```shell
+git branch
+```
 
 获得目前的本地所有分支，可以通过添加参数-a来获取远程和本地的所有分支
 
-    git branch [branch name]
+```shell
+git branch [branch name]
+```
 
 创建一个分支
 
@@ -163,8 +177,10 @@ class的成员默认属性时public
 
 另外在java中可以通过new来创建String类
 
-    String str = "hello world";
-    String str1 = new String("hello world");
+```java
+String str = "hello world";
+String str1 = new String("hello world");
+```
 以上两句都可创建一个内容为hello world的字符串
 
 但是java中有一个常量池的概念  
@@ -181,9 +197,11 @@ class的成员默认属性时public
 
 java中在new了一个新的对象后是自动创建了两个对象，但是创建一个类的数组的时候要自己手动实现第二个对象。
 
-    Dog dog= new Dog[3];
-    for(int i =0; i < 3; i++)
-        dog[i] = new Dog();
+```java
+Dog dog= new Dog[3];
+for(int i =0; i < 3; i++)
+    dog[i] = new Dog();
+```
 我认为在执行完第一句的时候jvm只是在栈中创建了三个Dog对象，但并没有实际指向堆中的数据  
 在for循环中依次在堆中建立Dog对象并将每一个栈中的Dog对象指向对应的堆中的Dog对象。有点像系统的拖延分配页框。
 
@@ -223,8 +241,10 @@ git add and git rm
 
 今天更新下我对git add和git rm这两个命令的理解
 
-    git add (filename)
-    git rm (filename)
+```shell
+git add (filename)
+git rm (filename)
+```
 git add是将自己完成修改的文件添加到暂存区  
 git rm在什么参数都不加时是将自己的本地仓库\暂存区中的文件删除同时删除工作目录中的文件
 
@@ -281,20 +301,26 @@ C++[今日更新](part1/chapter3/README.md)
 
 ### git init
 
-    git init
+```shell
+git init
+```
 在本地创建一个文件夹后在里面执行git init会自动生成一个.git文件夹  
 这样就成功生成了一个git仓库
 
 这时是可以通过checkout -b来切换分支的，但是这个分支还未生成,只能执行add和commit这些指令，其他的指令不是空就是提示各种错误  
 不切换的话默认在master
 
-    error: pathspec 'test' did not match any file(s) known to git.
-    fatal: You are on a branch yet to be born
+```shell
+error: pathspec 'test' did not match any file(s) known to git.
+fatal: You are on a branch yet to be born
+```
 以上就是两个常见的错误
 
 在初始化完成后有下面命令添加远程仓库
 
-    git remote add [option] origin <url>
+```shell
+git remote add [option] origin <url>
+```
 这样就把分支和远程仓库就连接起来了
 
 然后就可以执行git pull把代码拉到本地仓库里
@@ -305,7 +331,9 @@ C++[今日更新](part1/chapter3/README.md)
 ### 关于git push
 今天在推项目的时候发生了一个莫名其妙的错误
 
-    git push origin <branch> :<branch>
+```shell
+git push origin <branch> :<branch>
+```
     
 在输入命令时tab自动加了一个空格，我也就没在意。。。然后突然发现就推不上去了。。。
 
@@ -344,8 +372,10 @@ C++[今日更新](part1/chapter8/README.md)
 ## 2020 6.1 Day25
 今儿是儿童节~  
 
-    git remote rm [repo] // remove a repo
-    git remote add -t origin [repo] // add a branch as origin
+```shell
+git remote rm [repo] // remove a repo
+git remote add -t origin [repo] // add a branch as origin
+```
 
 ## 2022 9.21 Day...
 
