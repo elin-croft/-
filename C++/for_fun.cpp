@@ -45,9 +45,12 @@ int main()
         cout<<msg;
         exit(1);
     }
-    cout<<"input your choose"<<endl;
-    while(cin>>input)
+    cout<<"input your choose or input bye to finish"<<endl;
+    while(cin>>input){
+        if (input == "bye")
+            break;
         play->guess(input);
+    }
     delete play;
     //system("pause");
 
@@ -71,8 +74,11 @@ char Game::detranslate(string x)
         ans = '0';
     else if (x == "scissors")
          ans = '1';
-    else
+    else if (x == "paper")
         ans = '2';
+    else{
+        throw std::runtime_error("input error, it should be rock, paper or scissors");
+    }
     return ans;   
 }
 void Game::guess(string input)
@@ -81,22 +87,27 @@ void Game::guess(string input)
     string record;
     int tie =0;
     tie = c-tie;
-    condition.at(1)= detranslate(input);
-    tie = detranslate(input)-48 -tie;
-    condition.at(2)=c+48;
-    record = input + " vs " + translate(c);
-    cout<<record<<endl;
-    size_t pos = wins.find(condition);
-    if (pos != string::npos){
-        cout << "you won" << endl;
-        win++;
+    try{
+        condition.at(1)= detranslate(input);
+        tie = detranslate(input)-48 -tie;
+        condition.at(2)=c+48;
+        record = input + " vs " + translate(c);
+        cout<<record<<endl;
+        size_t pos = wins.find(condition);
+        if (pos != string::npos){
+            cout << "you won" << endl;
+            win++;
+        }
+        else if (tie != 0){
+            cout << "you lost" << endl;
+            lost++;
+        }
+        else{
+            cout << "tie" << endl;
+            g_tie++;
+        }
     }
-    else if (tie != 0){
-        cout << "you lost" << endl;
-        lost++;
-    }
-    else{
-        cout << "tie" << endl;
-        g_tie++;
+    catch(const std::runtime_error& e){
+        std::cerr << e.what() << '\n';
     }
 }
